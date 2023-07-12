@@ -1,0 +1,18 @@
+@config "../../tailwind.config.js";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .nav-links {
+        @apply w-full top-[5rem] left-[48px] m-0 text-white uppercase;
+    }
+    .hamburger {
+         @apply my-auto ml-auto mr-[10px] pr-[20px] absolute left-[10px] top-[60%] translate-y-[-50%] cursor-pointer sm:hidden;
+    }
+    .line{
+        @apply block w-[40px] h-[5px] mb-[10px] bg-[#ff9776];
+        
+    }
+}

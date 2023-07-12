@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  overflow-y: hidden;
+  height: 100vh;
+  background-color: #000;
+}
+
+.wrapper {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.wrapper::-webkit-scrollbar {
+  display:none; 
+}
+
+#field1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+#field2{
+  box-shadow: 0px -3em 30px 50px #000;
+
+}
+
+.layer1Style, .layer2Style, .layer3Style, .layer4Style, .layer5Style {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  will-change: transform;
+}
+
+.layer1Style{
+    transform:translateZ(-2px) scale(1.22);
+}
+
+.layer2Style{
+    transform:translateZ(-4px) scale(1.42);
+}
+
+.layer3Style{
+    transform:translateZ(-5px) scale(1.52);
+}
+
+.layer4Style{
+    transform:translateZ(-8px) scale(1.82);
+}
+
+.layer5Style{
+    transform:translateZ(-10px) scale(2.2);
+}
+
+.titleWrapper{
+    transform-style: preserve-3d; 
+}
+
+.titleStyle{
+    text-shadow: #333333 1px 0 20px;
+    transform:translateZ(-8.5px) translateY(-460%) scale(2.87);
+}
+
+@media screen and (min-width:640px){
+  .titleStyle{
+        transform:translateZ(-8.5px) translateY(-520%) scale(2.87);
+  }
+}
+
+@media screen and (min-width:407px){
+  .titleStyle{
+        transform:translateZ(-8.5px) translateY(-590%) scale(2.87);
+  }
+}
+
+@media screen and (min-width:640px){
+  .titleStyle{
+        transform:translateZ(-8.5px) translateY(-520%) scale(2.87);
+  }
+}
+
+@media screen and (min-width:862px){
+
+  .titleStyle{
+        transform:translateZ(-8.5px) translateY(-560%) scale(2.87);
+  }
+}
